@@ -1,11 +1,11 @@
 //
 // Created by kamilk on 2/3/24.
 //
-#include <QMap>
-#include <QString>
+
 #ifndef FORU_BAZA_H
 #define FORU_BAZA_H
-
+#include <QMap>
+#include <QString>
 
 QMap<QString, double> mama {
         {"awokado", 160},
@@ -84,8 +84,44 @@ QMap<QString, double> mama {
         {"sezamki", 402},
         {"sola", 80},
         {"szynka wieprzowa", 250},
-        {"szynka", 250}
-        
+        {"szynka", 250},
+        {"brzoskwinia", 46},
+        {"brzoskwinie", 46},
+        {"brukselka", 110},
+        {"cebula", 37},
+        {"chleb", 250},
+        {"chleb baltonowski", 250},
+        {"chleb graham", 230},
+        {"chleb żytni", 241},
+        {"chleb żytni razowy", 223},
+        {"chleb razowy", 213},
+        {"chrzan", 67},
+        {"cukier", 405},
+        {"cytryna", 36},
+        {"cukierki", 420},
+        {"czarne jagody", 46},
+        {"czekolada", 530},
+        {"czekolada gorzka", 550},
+        {"czekolada biała", 540},
+        {"mon cheri", 421},
+        {"ferrero rocher", 530},
+        {"czosnek", 144},
+        {"ćwikła", 41},
+        {"czereśnie", 55},
+        {"dorsz", 227},
+        {"wafelki", 553},
+        {"fasola szparagowa", 30},
+        {"fasolka po bretońsku", 141},
+        {"ziemniaki", 89},
+        {"grejpfrut", 31},
+        {"gruszki", 54},
+        {"gołąbki", 128},
+        {"groszek", 80},
+        {"groszek zielony", 80},
+        {"grześki", 550},
+        {"gulasz wołowy", 150},
+        {"gulasz", 180},
+        {"granat", 65}
 };
 
 
