@@ -6,7 +6,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_CROSSCOMPILING ON)
-set(CMAKE_PREFIX_PATH /home/kamilk/Qt/6.6.2/x86_64-w64-mingw32/bin)
+set(CMAKE_PREFIX_PATH ~/Qt/6.6.2/gcc_64/bin)
 
 
 find_package(Qt6 COMPONENTS
