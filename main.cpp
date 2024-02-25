@@ -28,7 +28,7 @@ void dialog() {
     QList<QLineEdit *> fields;
     QList<QLineEdit *> wagaf;
     dialog->setLayout(forms);
-    forms->addRow(new QLabel("Wpisz produkt\t\tWaga(gram)"));
+    forms->addRow(new QLabel("Wpisz produkt\t\t  Waga(gram)"));
     for (int i = 0; i < 4; ++i) {
         QLineEdit *lineEdit = new QLineEdit(dialog);
         lineEdit->setAlignment(Qt::AlignRight);
@@ -57,8 +57,13 @@ void dialog() {
 //                foreach(QLineEdit *lineEdit, fields) {
         for (int i = 0; i < fields.size(); ++i) {
             objekt.push_back(fields[i]->text());
-            double tempn = wagaf[i]->text().toDouble();
-            vwaga.push_back(tempn * 0.01f);
+            if (wagaf[i]->text() != "") {
+                double tempn = wagaf[i]->text().toDouble();
+                vwaga.push_back(tempn * 0.01f);
+            }
+            else {
+                vwaga.push_back(1);
+            }
         }
         for (int i = 0; i < objekt.size(); ++i) {
             QString tex = objekt[i];
@@ -104,7 +109,7 @@ void dialog() {
             QString nnogo2 = QString::number(vwaga[1] * 0.1f);
             QString nnogo3 = QString::number(vwaga[2] * 0.1f);
             QString nnogo4 = QString::number(vwaga[3] * 0.1f);
-            boxxy->setText("Znaleziono: 3 \n" + nogo + " : " + nnogo + " kg\n" + nogo2
+            boxxy->setText("Znaleziono: 4 \n" + nogo + " : " + nnogo + " kg\n" + nogo2
                            + " : " + nnogo2 + "kg\n" + nogo3 + " : " + nnogo3 + "kg\n " + nogo4
                            + " : " + nnogo4 + " kg\nWynik: " + gogogo + " kcal");
             boxxy->exec();
