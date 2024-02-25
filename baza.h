@@ -167,7 +167,7 @@ QMap<QString, double> mama {
         {"kotlet mielony", 283},
         {"kotlet schabowy", 351},
         {"krupnik", 40},
-        {"makaron", 373}
+        {"makaron", 373},
 	{"por", 24},
 	{"porzeczki białe", 33},
 	{"czarne porzeczki", 35},
